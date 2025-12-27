@@ -1,4 +1,6 @@
-export default function ModeToggle({ darkMode, onClick }) {
+import type { darkModeProps } from "./TopBar";
+
+export default function ModeToggle({ darkMode, onClick }: darkModeProps) {
   const lightIcon = (
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -12,9 +12,10 @@ function App() {
 
   useEffect(() => {
     window.addEventListener("resize", (e) => {
+      const windowTarget = e.currentTarget as Window;
       setViewport({
-        width: e.currentTarget.innerWidth,
-        height: e.currentTarget.innerHeight,
+        width: windowTarget.innerWidth,
+        height: windowTarget.innerHeight,
       });
     });
   }, []);
